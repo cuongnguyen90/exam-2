@@ -11,7 +11,7 @@
         arr.push(Math.floor(Math.random()*20));
     }
 
-    tryRemoFromArray(prompt("Nhap so bat ki"),arr);
+    document.write(tryRemoFromArray(prompt("Nhap so bat ki"),arr));
 
     function tryRemoFromArray(n,arr) {
         for (i = 0;i < arr.length - 1 ; i++){
@@ -20,7 +20,7 @@
             }
         }
 
-        document.write(arr);
+        return arr;
     }
 </script>
 
