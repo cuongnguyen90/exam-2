@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+<script>
+    arr = [];
+    for (j = 0 ; j < 12 ;j++){
+        arr.push(Math.floor(Math.random()*20));
+    }
+
+    tryRemoFromArray(prompt("Nhap so bat ki"),arr);
+
+    function tryRemoFromArray(n,arr) {
+        for (i = 0;i < arr.length - 1 ; i++){
+            if (arr[i] == n){
+                arr.splice(i,1);
+            }
+        }
+
+        document.write(arr);
+    }
+</script>
+
+</body>
+</html>
